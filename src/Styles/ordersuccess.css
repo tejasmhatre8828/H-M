@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #body {
+        width: 100vw;
+        /* height: 100vh; */
+        padding: 15px;
+        font-family: "Almarai", sans-serif;
+        /* display: block;
+    justify-content: center;
+    align-items: center; */
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .top {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    #logoleft {
+        width: 40px;
+        /* height: 100%; */
+        display: flex;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    #logoright {
+        width: 220px;
+        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo1 {
+        display: none;
+    }
+
+    .logo4 {
+        width: 20px
+    }
+
+    .logo2 {
+        width: 25px
+    }
+
+    #info {
+        width: 100%;
+        /* height: 90vh; */
+        display: block;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        /* padding: 0px 16px; */
+        margin-bottom: 100px;
+        /* border: 5px solid red; */
+    }
+
+    #login {
+        width: 350px;
+        height: 70%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /* border: 3px solid green; */
+    }
+
+    #thank {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        font-family: "Almarai", sans-serif;
+        margin-bottom: 60px;
+    }
+
+    #member {
+        display: block;
+        font-weight: 500;
+        font-family: "Almarai", sans-serif;
+        font-size: 12px;
+        /* text-align: none; */
+        line-height: 1.7;
+        margin-top: 30px;
+    }
+
+    #login div {
+        margin-bottom: 20px;
+    }
+
+    #button {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        color: white;
+        font-size: medium;
+        margin-bottom: 50px;
+    }
+
+    #options {
+        margin-top: 50px;
+        width: 350px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid red; */
+
+    }
+
+    .ops {
+        width: 24%;
+        height: 80%;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        /* box-sizing: border-box; */
+        box-shadow: rgb(95, 190, 193);
+        padding: 15px;
+        /* border: 2px solid black; */
+    }
+
+    .ops img {
+        width: 20px;
+
+    }
+
+    #hm {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        font-family: "Almarai", sans-serif;
+    }
+
+    #hmlink {
+        margin-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    .shop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    #details {
+        display: none;
+    }
+
+    #ind {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    #rs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        width: 60%;
+    }
+
+    #media {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    #media1 {
+        display: none;
+    }
+
+    #footer {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #body {
+        /* width: 100vw; */
+        /* height: 100vh; */
+        padding: 15px;
+        font-family: "Almarai", sans-serif;
+        /* display: block;
+    justify-content: center;
+    align-items: center; */
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .top {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    #logoleft {
+        width: 30%;
+        /* height: 100%; */
+        display: flex;
+        /* justify-content: space-evenly;
+        align-content: center;
+        align-items: center; */
+    }
+
+    #logoright {
+        width: 170px;
+        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+        padding-left: 40px;
+        font-size: small;
+    }
+
+    .logo4 {
+        width: 20px
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    #info {
+        width: 35%;
+        /* height: 90vh; */
+        display: block;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin-left: 32%;
+        margin-bottom: 100px;
+        /* border: 5px solid red; */
+    }
+
+    #login {
+        width: 400px;
+        height: 70%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        /* border: 3px solid green; */
+    }
+
+    #thank {
+        text-align: center;
+        font-weight: 600;
+        font-size: 55px;
+        font-family: "Michroma", sans-serif;
+        /* margin-bottom: 100px; */
+        padding-bottom: 35px;
+        padding-top: 10px;
+
+    }
+
+    #member {
+        width: 93%;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        line-height: 1.7;
+        margin-top: 30px;
+    }
+
+    #login div {
+        margin-bottom: 20px;
+    }
+
+
+    #button {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        color: white;
+        font-size: medium;
+        margin-bottom: 20px;
+    }
+
+    #options {
+        margin-top: 50px;
+        width: 400px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid red; */
+
+    }
+
+    .ops {
+        width: 24%;
+        height: 80%;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        /* box-sizing: border-box; */
+        box-shadow: rgb(95, 190, 193);
+        padding: 15px;
+        /* border: 2px solid black; */
+    }
+
+    .ops img {
+        width: 20px;
+
+    }
+
+    #hm {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        font-family: "Almarai", sans-serif;
+    }
+
+    #hmlink {
+        margin-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    .shop {
+        display: none
+    }
+
+    #details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    .texts {
+        width: 25%;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    #ind {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    #rs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        width: 20%;
+    }
+
+    #media {
+        display: none;
+    }
+
+    #footer {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #media1 {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
+}
