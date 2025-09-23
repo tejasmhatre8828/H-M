@@ -1,21 +1,24 @@
 import React from 'react'
 import { useState } from 'react';
 // import './App.css'
-import HomePage from './Pages/HomePage.jsx'
-import LoginPage from './Pages/LoginPage.jsx'
-import { Route, Routes } from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from './Pages/LoginPage';
+import Home from './Pages/HomePage';
+import Header from './component/Header';
+import Footer from './component/Footer';
 // import './home.css'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <>
+    <div>
+      <Header />
       <Routes>
-        <Route path="/" element={<LoginPage onLogin={() => setIsLoggedIn(true)} />} />
-        <Route path="/home" element={<HomePage isLoggedIn={isLoggedIn} />} />
+        <Route path="/" element={<Login />} />
+        <Route path="home" element={<Home />} />
       </Routes>
-    </>
+      <Footer />
+    </div>
   )
 }
 

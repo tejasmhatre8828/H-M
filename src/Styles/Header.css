@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&family=Aerator+Regular&family=Michroma&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #bodyHome {
+        width: 100vw;
+        /* height: 100vh; */
+        /* padding: 15px; */
+        font-family: "Almarai", sans-serif;
+        /* display: block;
+    justify-content: center;
+    align-items: center; */
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        height: 200px;
+        background-color: white;
+        padding: 0px 15px;
+        /* border: 1px solid red; */
+    }
+
+    #top {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        /* margin-bottom: 20px; */
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .add button {
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .add button:hover {
+        font-weight: bold;
+    }
+
+    #top1 {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    #logoleft {
+        width: 40px;
+        /* height: 100%; */
+        display: flex;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    #logoright {
+        width: 220px;
+        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo1 {
+        display: none;
+    }
+
+    .logo4 {
+        width: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .logo2 {
+        width: 25px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #logo3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        color: gray;
+        margin-top: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        background-color: white;
+        padding: 0% 20%;
+    }
+
+    #sale {
+        width: 100%;
+        /* height: 50px; */
+        font-size: 20px;
+        font-weight: 600;
+        color: #e50010;
+        background-color: #f8f7f6;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        font-weight: 700;
+        font-size: 40px;
+        font-family: "Aerator Regular", sans-serif;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #bodyhome {
+        width: 100%;
+        /* height: 100vh; */
+        /* padding: 15px; */
+        font-family: "Almarai", sans-serif;
+        /* display: block;
+    justify-content: center;
+    align-items: center; */
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 0px 15px;
+        /* border: 5px solid red; */
+    }
+
+    #top {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        /* margin-bottom: 20px; */
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .add button {
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .add button:hover {
+        font-weight: bold;
+    }
+
+    #top1 {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        justify-items: baseline;
+        font-family: "Almarai", sans-serif;
+        /* padding-top: 5px; */
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        /* border: 1px solid rgb(23, 21, 21); */
+
+    }
+
+    #logoleft {
+        width: 40px;
+        /* height: 100%; */
+        display: flex;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    #logoright {
+        width: 180px;
+        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo1 {
+        /* width: 65%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        color: gray;
+        margin-top: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        background-color: white;
+        padding: 0% 20%;
+        /* border: 1px solid blue; */
+    }
+
+    #logo1 button {
+        width: 100px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        font-weight: 300;
+    }
+
+    #logo1 button:hover {
+        font-weight: bold;
+    }
+
+    .logo4 {
+        width: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    #logo3 {
+        display: none;
+    }
+
+
+}
