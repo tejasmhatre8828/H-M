@@ -1,5 +1,5 @@
 import React from "react";
-// import '../Styles/Home.css';
+'../Styles/Home.css';
 import add from "../assets/add_.svg";
 import bed4x5 from "../images/bg bed 4x5.jpg";
 import img1 from "../images/img1.jpg";
