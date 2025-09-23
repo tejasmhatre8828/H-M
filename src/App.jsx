@@ -6,7 +6,6 @@ import Login from './Pages/LoginPage';
 import Home from './Pages/HomePage';
 import Header from './component/Header';
 import Footer from './component/Footer';
-// import './home.css'
 
 function App() {
 
