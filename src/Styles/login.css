@@ -9,8 +9,9 @@
 
     #body {
         width: 100vw;
-        /* height: 100vh; */
+        height: 100vh;
         padding: 15px;
+        margin-bottom: 500px;
         font-family: "Almarai", sans-serif;
         /* display: block;
     justify-content: center;
@@ -44,7 +45,7 @@
     #welcome {
         font-weight: 700;
         font-size: 40px;
-        font-family: "Almarai", sans-serif;
+        font-family: "Michroma", sans-serif;
         margin-bottom: 60px;
     }
 

@@ -7,6 +7,7 @@ import pinterest from '../images/pinterest.png';
 import tiktok from '../images/tiktok.png';
 import facebook from '../images/facebook.png';
 import youtube from '../images/youtube.png';
+import add from "../assets/add_.svg";
 
 const Footer = () => {
     return (
@@ -15,15 +16,15 @@ const Footer = () => {
                 {/* <div id="hmlink"><span style={{ color: "gray" }}>HM.COM / </span><b>SIGN IN</b></div> */}
                 <div className="shop">
                     <div>SHOP</div>
-                    <div><img style={{ width: "30px", height: "25px" }} src="../icons/add_.svg" /></div>
+                    <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add"/></div>
                 </div>
                 <div className="shop">
                     <div>CORPORATE INFO</div>
-                    <div><img style={{ width: "30px", height: "25px" }} src="../icons/add_.svg" /></div>
+                    <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add" /></div>
                 </div>
                 <div className="shop">
                     <div>HELP</div>
-                    <div><img style={{ width: "30px", height: "25px" }} src="../icons/add_.svg" /></div>
+                    <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add" /></div>
                 </div>
                 <div id="details">
                     <div className="texts">

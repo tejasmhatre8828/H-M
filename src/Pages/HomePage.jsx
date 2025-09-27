@@ -18,6 +18,7 @@ import beddingCE from "../images/Bedding_CE.jpg";
 import tablewareCE from "../images/Tableware_CE.jpg";
 import towels from "../images/Towels_CE_wk23-28-2x3_5.jpg";
 import decorationsCE from "../images/Decorations_CE_wk23-28-2x3_4.jpg";
+import natural from "../images/natural notes 16x9.jpg";
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
         <div id="home">
             <div id="sale">
                 <div>SALE</div>
-                <div style={{paddingBottom: "30px"}}>UPTO 50% OFF</div>
+                <div style={{ paddingBottom: "30px" }}>UPTO 50% OFF</div>
                 <div>NEW STYLES</div>
                 <div>ADDED</div>
             </div>
@@ -38,27 +39,30 @@ const Home = () => {
             <div id="background">
                 <div id="block">
                     <div id="bgimg">
-                        <div id="font">NATURAL NOTES</div>
-                        <div style={{ paddingRight: "15px", paddingTop: "18px" }}><button
-                            style={{ padding: "5px 10px", fontSize: "15px", border: "none", textDecoration: "underline" }}>SHOP
-                            NOW</button></div>
+                        <img src={natural} alt="natural" />
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+                            <div id="font">NATURAL NOTES</div>
+                            <div><button>SHOP NOW</button></div>
+                        </div>
                     </div>
                     <div id="bedimg"><img style={{ width: "100%", height: "100%" }} src={bed4x5} alt="bed4x5" /></div>
 
                 </div>
-                <div id="bgimg1">
+                <div id="bgimg1" >
                     <div id="content">
-                        <div id="font">
-                            <div>NATURAL</div>
-                            <div>NOTES</div>
-                        </div>
-                    </div>
-                    <div id="butn">
-                        <button style={{ padding: "5px 10px", fontSize: "15px", border: "none" }}>SHOP NOW</button>
-                    </div>
-                    <div id="bedimg"><img style={{ width: "100vw", height: "50vh" }} src={bed4x5} alt="bed4x5" /></div>
-                </div>
+                        <div id="overlay">
+                            <div id="font">
+                                <div>NATURAL</div>
+                                <div>NOTES</div>
+                            </div>
 
+                            <div id="butn">
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div id="bedimg"><img src={bed4x5} alt="bed4x5" /></div>
+                    </div>
+                </div>
 
                 <div id="viewall">
                     <div className="add">SUMMER BEDDING</div>
