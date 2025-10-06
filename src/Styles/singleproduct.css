@@ -7,42 +7,25 @@
     /* border: 1px solid red; */
 }
 
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 
-    #bodyhome {
+    #bodyproduct {
         width: 100%;
         height: 100%;
         /* padding: 15px; */
         font-family: "Almarai", sans-serif;
-        /* display: block;
-    justify-content: center;
-    align-items: center; */
         /* border: 10px solid rgb(17, 0, 255); */
 
     }
 
-    .header {
-        position: sticky;
-        top: 0;
-        background-color: white;
-        padding: 0px 15px;
-        /* border: 1px solid red; */
-    }
-
-    #top {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        /* margin-bottom: 20px; */
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
 
     .add {
         display: flex;
@@ -50,70 +33,6 @@
         align-items: center;
         font-size: 15px;
     }
-
-    #top1 {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    #logoleft {
-        width: 45px;
-        /* height: 100%; */
-        display: flex;
-        /* align-content: center; */
-        align-items: center;
-    }
-
-    #logoleft img {
-        width: 100%;
-        margin-right: 20px
-            /* height: 100%; */
-            /* background-attachment: fixed; */
-    }
-
-    #logoright {
-        width: 220px;
-        /* height: 100%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo1 {
-        display: none;
-    }
-
-    .logo4 {
-        width: 20px
-    }
-
-    .logo2 {
-        width: 25px
-    }
-
-    #logo3 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        color: gray;
-        margin-top: 20px;
-        font-size: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        padding: 0% 20%;
-    }
-
 
     #background {
         width: 100vw;
@@ -123,7 +42,7 @@
     }
 
 
-    #products {
+    #items {
         width: 100%;
         /* height: 100vh; */
         display: flex;
@@ -162,11 +81,11 @@
         /* margin-left: 10px; */
         /* display: flex;
         justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap; */
+        align-items: center; */
+        flex-wrap: wrap;
     }
 
-    .productname {
+    .name {
         font-size: 15px;
         font-family: "Almarai", sans-serif;
         font-weight: 10px;
@@ -175,7 +94,7 @@
         /* padding-top: 10px; */
     }
 
-    .productprice {
+    .price {
         font-size: 15px;
         font-family: "Almarai", sans-serif;
         font-weight: bold;
@@ -183,7 +102,7 @@
         padding-left: 20px;
     }
 
-    #buttons {
+    #bttons {
         width: 150px;
         height: 112px;
         display: flex;
@@ -203,21 +122,25 @@
     }
 
     .shirtbtn:hover {
-        background-color: black;
+        border: 2px solid black;
     }
 
     #sizes {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         padding: 0px 20px;
         margin-top: 20px;
+        flex-wrap: 2;
+        /* border: 1px solid green; */
     }
 
     .size {
+        background-color: white;
         width: 86px;
         height: 60px;
+        margin-inline: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -227,17 +150,10 @@
         font-family: "Almarai", sans-serif;
     }
 
-    #xxl {
-        width: 90px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* border-radius: 50%; */
-        border: 1px solid rgb(207, 201, 201);
-        font-size: 15px;
-        margin-left: 20px;
-        font-family: "Almarai", sans-serif;
+    #sizes button:hover {
+        font-weight: bold;
+        background-color: aquamarine;
+        border: 2px solid black;
     }
 
     #addbutton {
@@ -253,7 +169,13 @@
         font-family: "Almarai", sans-serif;
     }
 
-    #pages {
+    #addbutton:hover {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+    }
+
+    #more {
         width: 450px;
         display: flex;
         justify-content: space-between;
@@ -266,6 +188,13 @@
         /* border: 1px solid red; */
     }
 
+    .help {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        padding: 0px 15px;
+        font-family: "Almarai", sans-serif;
+    }
 
     #hmlink {
         margin-bottom: 100px;
@@ -282,94 +211,16 @@
         text-decoration: underline;
         font-family: "Almarai", sans-serif;
     }
-
-    .shop {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        padding: 0px 15px;
-        font-family: "Almarai", sans-serif;
-    }
-
-    #details {
-        display: none;
-    }
-
-    #black {
-        width: 80px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-    }
-
-    #ind {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 45px;
-        padding-left: 15px;
-    }
-
-    #rs {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        width: 60%;
-    }
-
-    #media {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        padding-left: 15px;
-        margin-bottom: 40px;
-    }
-
-    #media1 {
-        display: none;
-    }
-
-    #footer {
-        font-size: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-bottom: 40px;
-        padding-inline: 15px;
-    }
 }
 
 @media (min-width: 1200px) and (max-width: 1920px) {
 
-    #bodyhome {
+    #bodyproduct {
         width: 100%;
         /* height: 100vh; */
         /* padding: 15px; */
         font-family: "Almarai", sans-serif;
-        /* display: block;
-    justify-content: center;
-    align-items: center; */
         /* border: 10px solid rgb(17, 0, 255); */
-
-    }
-
-    .header {
-        position: sticky;
-        top: 0;
-        background-color: white;
-        padding: 10px 15px;
-        /* border: 5px solid red; */
-    }
-
-    #top {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        /* margin-bottom: 20px; */
-        /* border: 1px solid rgb(23, 21, 21); */
 
     }
 
@@ -380,76 +231,6 @@
         font-size: 15px;
     }
 
-    #top1 {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        /* padding-top: 5px; */
-        padding-bottom: 15px;
-        margin-bottom: 20px;
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    #logoleft {
-        width: 250px;
-        /* height: 100%; */
-        display: flex;
-        justify-content: space-between;
-        /* align-content: center; */
-        align-items: center;
-    }
-
-    #logoleft img {
-        width: 70px;
-        height: 60px;
-        padding: 10px;
-        margin-right: 20px
-            /* height: 100%; */
-            /* background-attachment: fixed; */
-    }
-
-    #logoright {
-        width: 180px;
-        /* height: 100px; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 5px;
-    }
-
-    #logo1 {
-        /* width: 65%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        color: gray;
-        margin-top: 20px;
-        font-size: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        padding: 0% 20%;
-        /* border: 1px solid blue; */
-    }
-
-    .logo4 {
-        width: 20px
-    }
-
-    .logo2 {
-        display: none;
-    }
-
-    #logo3 {
-        display: none;
-    }
-
-
     #background {
         width: 100%;
         height: 100%;
@@ -458,7 +239,7 @@
     }
 
 
-    #products {
+    #items {
         width: 100%;
         /* height: 100vh; */
         display: flex;
@@ -468,7 +249,7 @@
         /* border: 2px solid #e50010; */
     }
 
-    .productsdiv {
+    .itemsdiv {
         width: 50%;
         position: content;
         display: block;
@@ -499,16 +280,17 @@
     #sort {
         padding-top: 80px;
         width: 50%;
-        /* height: 50%; */
+        padding-left: 80px;
+        height: 50%;
         position: sticky;
-        /* top: 500px; */
-        /* left: 50%; */
+        top: 50px;
+        left: 50%;
         display: block;
-        justify-content: flex-start;
-        align-items: first baseline;
+        justify-content: left;
+        align-items: flex-start;
         /* border: 2px solid #e50010; */
     }
-    
+
 
     #productsdetails {
         width: 100%;
@@ -517,35 +299,37 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap; */
+        /* border: 2px solid black; */
     }
 
-    .productname {
+    .name {
+        line-height: 1.5;
         font-size: 15px;
         font-family: "Almarai", sans-serif;
         font-weight: 10px;
         color: black;
         /* padding-left: 20px; */
-        margin-inline: 90px;
+        margin-inline: 50px;
         /* padding-top: 10px; */
     }
 
-    .productprice {
+    .price {
         font-size: 15px;
         font-family: "Almarai", sans-serif;
         font-weight: bold;
         color: black;
         /* padding-left: 20px; */
-        margin-inline: 90px;
+        margin-inline: 50px;
 
     }
 
-    #buttons {
+    #bttons {
         width: 150px;
         height: 112px;
         display: flex;
-        /* justify-items:left;
-        align-items: left; */
-        margin: 20px 90px 50px 90px;
+        justify-items: left;
+        align-items: left;
+        margin: 20px 0px 50px 50px;
         /* border: 1px solid rgb(233, 23, 23); */
     }
 
@@ -559,23 +343,25 @@
     }
 
     .shirtbtn:hover {
-        background-color: black;
+        border: 2px solid black;
     }
 
     #sizes {
-        /* width: 80%; */
+        width: 380px;
         display: flex;
         /* justify-content: space-evenly;
         align-items: center; */
         /* padding: 0px 20px; */
         margin-top: 20px;
-        margin-inline: 90px;
+        margin-inline: 50px;
         /* border: 2px solid #e50010; */
     }
 
     .size {
+        background-color: white;
         width: 90px;
         height: 60px;
+        margin-inline: 2px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -585,19 +371,11 @@
         font-family: "Almarai", sans-serif;
     }
 
-    #xxl {
-        width: 90px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* border-radius: 50%; */
-        border: 1px solid rgb(207, 201, 201);
-        font-size: 15px;
-        margin-left: 90px;
-        font-family: "Almarai", sans-serif;
+    #sizes button:hover {
+        font-weight: bold;
+        background-color: aquamarine;
+        border: 2px solid black;
     }
-
 
     #addbutton {
         /* align-items: center; */
@@ -612,17 +390,31 @@
         font-family: "Almarai", sans-serif;
     }
 
-    #pages {
-        width: 450px;
+    #addbutton:hover {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+    }
+
+    #more {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         justify-items: center;
-        margin-inline: 90px;
+        margin-inline: 50px;
         padding: 40px 0px 20px 0px;
         margin-bottom: 80px;
         font-family: "Almarai", sans-serif;
         /* border: 1px solid red; */
+    }
+
+    .help {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        margin-inline: 50px;
+        font-family: "Almarai", sans-serif;
     }
 
 
@@ -637,79 +429,8 @@
     }
 
     #hm {
-
         text-decoration: underline;
         font-family: "Almarai", sans-serif;
-    }
-
-    .shop {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        /* padding: 0px 15px; */
-        margin-inline: 90px;
-        font-family: "Almarai", sans-serif;
-    }
-
-    #footer1{
-        display: none;
-    }
-
-    #details {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-    }
-
-    .texts {
-        width: 25%;
-        font-size: 15px;
-        font-family: "Almarai", sans-serif;
-        font-weight: 400;
-        line-height: 30px;
-        padding-inline: 15px;
-    }
-
-    #black {
-        width: 110px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-        padding-inline: 15px;
-    }
-
-    #ind {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 45px;
-        padding-left: 15px;
-    }
-
-    #rs {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        width: 20%;
-    }
-
-    #media {
-        display: none;
-    }
-
-    #footer {
-        font-size: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-bottom: 40px;
-        padding-inline: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #media1 {
-        display: flex;
-        justify-content: space-between;
-        width: 25%;
-        padding-left: 10px;
-        margin-bottom: 40px;
     }
 
 }

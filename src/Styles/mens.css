@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&family=Aerator+Regular&family=Michroma&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #bodymen {
+        width: 100%;
+        /* height: 100%; */
+        /* padding: 15px; */
+        font-family: "Almarai", sans-serif;
+        /* border: 1px solid rgb(17, 0, 255); */
+
+    }
+
+    #new {
+        width: 100%;
+        height: 50px;
+        padding-left: 10px;
+        padding-top: 15px;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #sortbuttons {
+        width: 350PX;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 5px;
+        /* border: 1px solid rgb(233, 23, 23); */
+    }
+
+    #sortbuttons button {
+        /* width: 100%; */
+        padding: 5px 10px;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    #sortbuttons button:hover {
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
+
+    #background {
+        /* width: 100%; */
+        height: 100%;
+    }
+
+    #filter {
+        position: sticky;
+        top: 104px;
+        background-color: white;
+        padding: 0px 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    #filter button {
+        background-color: white;
+        border: none;
+    }
+
+    #filter button:hover {
+        font-weight: bold;
+    }
+
+    .addbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    #products {
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid #e50010; */
+    }
+
+    .productsdiv {
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between;
+        align-items: center; */
+        /* margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+
+    .productsdiv div {
+        width: 50%;
+    }
+
+    #products div img {
+        width: 100%;
+        /* background-attachment: fixed; */
+    }
+
+    .productname {
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: normal;
+        color: black;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .productprice {
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: bold;
+        color: black;
+        padding-left: 10px;
+    }
+
+    #pagebutton {
+        /* align-items: center; */
+        width: 90%;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-top: 20px;
+        margin-inline: 20px;
+        padding: 20px 110px;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+    }
+
+    #pages {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        margin-inline: 40px;
+        padding: 20px 10px 20px 10px;
+        margin-bottom: 80px;
+        /* border: 1px solid red; */
+    }
+
+    #pages button {
+        background-color: white;
+        padding: 5px 8px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    #pages button:hover {
+        background-color: black;
+        font-weight: bolder;
+        color: white;
+    }
+
+    #hm {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        font-family: "Almarai", sans-serif;
+    }
+
+    #hmlink {
+        margin-bottom: 100px;
+        padding-top: 100px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #bodymen {
+        width: 100%;
+        /* height: 100vh; */
+        /* padding: 15px; */
+        font-family: "Almarai", sans-serif;
+        /* display: block;
+    justify-content: center;
+    align-items: center; */
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    #new {
+        /* width: 100%; */
+        height: 50px;
+        padding-left: 20px;
+        padding-top: 45px;
+        margin-bottom: 100px;
+        font-weight: 700;
+        font-size: 60px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #sortbuttons {
+        width: 350PX;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 10px;
+        /* border: 1px solid rgb(233, 23, 23); */
+    }
+
+    #sortbuttons button {
+        padding: 5px 10px;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    #sortbuttons button:hover {
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
+
+    #button3 {
+        /* width: 100%; */
+        padding: 8px 10px;
+        font-size: 15px;
+        /* font-weight: 600; */
+        font-family: "Almarai", sans-serif;
+        background-color: white;
+        border-radius: 0;
+        border: 1px solid black;
+    }
+
+    #background {
+        width: 100%;
+        height: 100%;
+    }
+
+    #filter {
+        position: sticky;
+        top: 104px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    #filter button {
+        background-color: white;
+        border: none;
+    }
+
+    #filter button:hover {
+        font-weight: bold;
+    }
+
+    .addbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    #products {
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid #e50010; */
+    }
+
+    .productsdiv {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        /* justify-content: space-between;
+        align-items: center; */
+        /* margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+
+    .productsdiv div {
+        width: 25%;
+        text-align: left;
+        /* border: 2px solid #e50010; */
+    }
+
+    #products div img {
+        width: 100%;
+        /* background-attachment: fixed; */
+    }
+
+    .productname {
+        width: 100%;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: normal;
+        color: black;
+        /* padding-left: 5px; */
+        text-align: left;
+        margin-bottom: 10px;
+        /* padding-top: 10px; */
+        /* border: 1px solid red; */
+    }
+
+    .productprice {
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: bold;
+        color: black;
+        /* padding-left: 10px; */
+        text-align: left;
+    }
+
+    #pagebutton {
+        /* align-items: center; */
+        width: 450px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-top: 20px;
+        margin-inline: 20px;
+        padding: 20px 10px;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+    }
+
+    #pages {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        margin-inline: 350px;
+        padding: 20px 10px 20px 10px;
+        margin-bottom: 80px;
+        /* border: 1px solid red; */
+    }
+
+    #pages button {
+        background-color: white;
+        padding: 5px 8px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    #pages button:hover {
+        background-color: black;
+        font-weight: bolder;
+        color: white;
+    }
+
+    #hm {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        font-family: "Almarai", sans-serif;
+    }
+
+}

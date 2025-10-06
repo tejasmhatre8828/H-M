@@ -1,5 +1,5 @@
 import React from "react";
-'../Styles/Home.css';
+import '../Styles/Home.css';
 import add from "../assets/add_.svg";
 import bed4x5 from "../images/bg bed 4x5.jpg";
 import img1 from "../images/img1.jpg";
@@ -19,6 +19,7 @@ import tablewareCE from "../images/Tableware_CE.jpg";
 import towels from "../images/Towels_CE_wk23-28-2x3_5.jpg";
 import decorationsCE from "../images/Decorations_CE_wk23-28-2x3_4.jpg";
 import natural from "../images/natural notes 16x9.jpg";
+import brown from "../images/brown-hues-summer-decor-4x5-LP5.jpg"
 
 
 const Home = () => {
@@ -40,7 +41,7 @@ const Home = () => {
                 <div id="block">
                     <div id="bgimg">
                         <img src={natural} alt="natural" />
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", marginTop: "80%" }}>
                             <div id="font">NATURAL NOTES</div>
                             <div><button>SHOP NOW</button></div>
                         </div>
@@ -50,18 +51,17 @@ const Home = () => {
                 </div>
                 <div id="bgimg1" >
                     <div id="content">
-                        <div id="overlay">
-                            <div id="font">
+                        <img src={brown} alt="brown" />
+                        <div style={{ display: "block", justifyContent: "center", alignItems: "center", width: "100%", lineHeight: "3.0" }}>
+                            <div id="font1">
                                 <div>NATURAL</div>
                                 <div>NOTES</div>
                             </div>
-
-                            <div id="butn">
-                                <button>SHOP NOW</button>
-                            </div>
+                            <div><button>SHOP NOW</button></div>
                         </div>
-                        <div id="bedimg"><img src={bed4x5} alt="bed4x5" /></div>
                     </div>
+                    <div id="bedimg1"><img src={bed4x5} alt="bed4x5" /></div>
+
                 </div>
 
                 <div id="viewall">

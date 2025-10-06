@@ -7,21 +7,24 @@
     /* border: 1px solid red; */
 }
 
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 
-    #bodyHome {
-        width: 100vw;
-        font-family: "Almarai", sans-serif;
-        border: 10px solid rgb(17, 0, 255);
-
-    }
-
     .header {
+        width: 100vw;
         position: sticky;
         top: 0;
-        height: 200px;
+        height: 170px;
         background-color: white;
-        padding: 0px 15px;
+        padding: 15px 15px;
+        z-index: 1000;
         /* border: 1px solid red; */
     }
 
@@ -36,6 +39,18 @@
         padding-bottom: 5px;
         /* border: 1px solid rgb(23, 21, 21); */
 
+    }
+
+    #red {
+        color: red;
+        font-Size: 15px;
+        background-color: white;
+        border: none;
+    }
+
+    #red:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .add {
@@ -94,6 +109,20 @@
         cursor: pointer;
     }
 
+    .search-input {
+        position: absolute;
+        /* top: 40px; */
+        right: 160px;
+        padding: 5px 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        z-index: 10;
+        background-color: white;
+        width: 180px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
     .logo2 {
         width: 25px;
         background-color: white;
@@ -115,327 +144,17 @@
     }
 
     /* ......header css end */
-    #home {
-        width: 100vw;
-        font-family: "Almarai", sans-serif;
-        /* border: 10px solid rgb(17, 0, 255); */
-
-    }
-
-    .add {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-    }
-
-    #top1 {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    #logoleft {
-        width: 40px;
-        display: flex;
-        align-items: center;
-    }
-
-    #logoright {
-        width: 220px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo1 {
-        display: none;
-    }
-
-    .logo4 {
-        width: 20px
-    }
-
-    .logo2 {
-        width: 25px
-    }
-
-    #logo3 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        color: gray;
-        margin-top: 20px;
-        font-size: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        padding: 0% 20%;
-    }
-
-    #sale {
-        width: 100%;
-        /* height: 50px; */
-        font-size: 20px;
-        font-weight: 600;
-        color: #e50010;
-        background-color: #f8f7f6;
-        margin-bottom: 30px;
-        padding-left: 10px;
-        padding-top: 50%;
-        padding-bottom: 50%;
-        font-weight: 700;
-        font-size: 40px;
-        font-family: "Aerator Regular", sans-serif;
-    }
-
-    .shopnow {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        padding: 0px 15px;
-    }
-
-    #terms {
-        padding: 0px 10px;
-        font-size: 14px;
-        color: grey;
-        margin-bottom: 15px;
-    }
-
-    #background {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #block {
-        display: none;
-    }
-
-    #bgimg {
-        display: none;
-    }
-
-    #bgimg1 {
-        width: 100%;
-        /* height: 70%; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* border: 1px solid blue; */
-    }
-
-    #content {
-        width: 100%;
-        height: 70vh;
-        background-image: url("../images/brown-hues-summer-decor-4x5-LP5.jpg");
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        /* border: 5px solid red; */
-    }
-
-    #overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        /* text-align: center; */
-    }
-
-    #font {
-        font-weight: bold;
-        font-size: 2.8rem;
-        color: white;
-        text-align: center;
-        line-height: 1.1;
-        /* border: 1px solid blue; */
-    }
-
-    #butn {
-        margin-top: 1.2rem;
-    }
-
-    #butn button {
-        padding: 8px 16px;
-        font-size: 1rem;
-        border: none;
-        text-decoration: underline;
-        background-color: rgba(255, 255, 255, 0.85);
-        color: black;
-        cursor: pointer;
-    }
-
-    #bedimg {
-        width: 100%;
-    }
-
-    #bedimg img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    #viewall {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        padding-top: 90%;
-        padding-inline: 15px;
-    }
-
-    #products {
-        width: 100%;
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .productsdiv {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* margin-bottom: 20px; */
-    }
-
-    #products div img {
-        width: 100%;
-    }
-
-    .bigimg {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        /* padding-top: 20px; */
-        /* margin-bottom: 60px; */
-    }
-
-    .bigimgdiv {
-        width: 50%;
-        /* margin-bottom: 20px; */
-    }
-
-    .bigimg div img {
-        width: 100%;
-    }
-
-    .bigimg1 {
-        width: 100%;
-        height: 45vh;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .bigimg1 div img {
-        width: 100%;
-    }
-
-
-
-
-    #hm {
-        display: flex;
-        justify-content: center;
-        text-decoration: underline;
-        font-family: "Almarai", sans-serif;
-    }
-
-    #hmlink {
-        margin-bottom: 500px;
-        padding-bottom: 500px;
-        padding-top: 100px;
-        padding-left: 15px;
-    }
-
-    .shop {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        padding: 0px 15px;
-    }
-
-    #details {
-        display: none;
-    }
-
-    #black {
-        width: 80px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-    }
-
-    #ind {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 45px;
-        padding-left: 15px;
-    }
-
-    #rs {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        width: 60%;
-    }
-
-    #media {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        padding-left: 15px;
-        margin-bottom: 40px;
-    }
-
-    #media1 {
-        display: none;
-    }
-
-    /* ....hompage css end.. */
 
 }
 
 @media (min-width: 1200px) and (max-width: 1920px) {
-
-    #bodyhome {
-        width: 100%;
-        /* height: 100vh; */
-        /* padding: 15px; */
-        font-family: "Almarai", sans-serif;
-        /* display: block;
-    justify-content: center;
-    align-items: center; */
-        /* border: 10px solid rgb(17, 0, 255); */
-
-    }
 
     .header {
         position: sticky;
         top: 0;
         background-color: white;
         padding: 0px 15px;
+        z-index: 1000;
         /* border: 5px solid red; */
     }
 
@@ -452,6 +171,18 @@
         /* margin-bottom: 20px; */
         /* border: 1px solid rgb(23, 21, 21); */
 
+    }
+
+    #red {
+        color: red;
+        font-Size: 15px;
+        background-color: white;
+        border: none;
+    }
+
+    #red:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .add {
@@ -536,6 +267,20 @@
         cursor: pointer;
     }
 
+    .search-input {
+        position: absolute;
+        /* top: 40px; */
+        right: 200px;
+        padding: 5px 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        z-index: 10;
+        background-color: white;
+        width: 180px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
     .logo2 {
         display: none;
     }
@@ -545,255 +290,5 @@
     }
 
     /* ......header css end */
-    #home {
-        width: 100%;
-        font-family: "Almarai", sans-serif;
-        /* border: 10px solid rgb(17, 0, 255); */
-
-    }
-
-    #sale {
-        width: 99%;
-        height: 75vh;
-        font-size: 20px;
-        font-weight: 600;
-        color: #e50010;
-        background-color: #f8f7f6;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        padding-top: 12%;
-        padding-bottom: 5%;
-        font-weight: 700;
-        font-size: 40px;
-        font-family: "Aerator Regular", sans-serif;
-        /* border: 5px solid #07534b; */
-    }
-
-    .shopnow {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        padding: 0px 15px;
-    }
-
-    #terms {
-        padding: 0px 10px;
-        font-size: 14px;
-        color: grey;
-        margin-bottom: 15px;
-    }
-
-    #background {
-        width: 100%;
-        /* border: 5px solid #e50010; */
-    }
-
-    #block {
-        display: flex;
-        /* border: 5px solid rgb(90, 248, 5); */
-    }
-
-    #bgimg {
-        position: relative;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow: hidden;
-        /* border: 15px solid rgb(255, 115, 0); */
-    }
-
-    #bgimg img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    #bgimg1 {
-        display: none;
-    }
-
-    #content {
-        display: none;
-    }
-
-    #font {
-        font-weight: bolder;
-        font-size: 32px;
-        color: white;
-        padding-left: 15px;
-        /* border: 25px solid blue; */
-    }
-
-    #bgimg button {
-        padding: 5px 10px;
-        font-size: 14px;
-        border: none;
-        text-decoration: underline;
-        background: rgba(255, 255, 255, 0.8);
-        margin-right: 15px;
-        cursor: pointer;
-    }
-
-    #butn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: underline;
-        padding-top: 13px;
-    }
-
-    #bedimg {
-        width: 50%;
-        height: 100%;
-        /* border: 5px solid blue; */
-    }
-
-
-    #viewall {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10%;
-        padding-top: 15px;
-        padding-inline: 15px;
-        padding-left: 52%;
-    }
-
-    #products {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .productsdiv {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #products div img {
-        width: 100%;
-    }
-
-    .bigimg {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    .bigimgdiv {
-        width: 50%;
-        height: 100%;
-    }
-
-    .bigimg div img {
-        width: 100%;
-    }
-
-    .bigimg1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .bigimg1 div img {
-        width: 100%;
-    }
-
-    #hm {
-        display: flex;
-        justify-content: center;
-        text-decoration: underline;
-        font-family: "Almarai", sans-serif;
-    }
-
-    #hmlink {
-        margin-bottom: 100px;
-        padding-top: 100px;
-        padding-left: 15px;
-    }
-
-    .shop {
-        display: none;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        padding: 0px 15px;
-    }
-
-    #details {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-    }
-
-    .texts {
-        width: 25%;
-        font-size: 15px;
-        font-family: "Almarai", sans-serif;
-        font-weight: 400;
-        line-height: 30px;
-        padding-inline: 15px;
-    }
-
-    #black {
-        width: 110px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-        padding-inline: 15px;
-    }
-
-    #ind {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 45px;
-        padding-left: 15px;
-    }
-
-    #rs {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        width: 20%;
-    }
-
-    #media {
-        display: none;
-    }
-
-    #footer {
-        font-size: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-bottom: 40px;
-        padding-inline: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #media1 {
-        display: flex;
-        justify-content: space-between;
-        width: 25%;
-        padding-left: 10px;
-        margin-bottom: 40px;
-    }
-
-    /* ....homepage css end... */
-
 
 }

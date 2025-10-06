@@ -4,265 +4,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    #bodyHome {
-        width: 100vw;
-        /* height: 100vh; */
-        /* padding: 15px; */
+    #bodyFooter {
+        width: 100%;
         font-family: "Almarai", sans-serif;
-        /* display: block;
-    justify-content: center;
-    align-items: center; */
-        /* border: 10px solid rgb(17, 0, 255); */
-
-    }
-
-    .header {
-        position: sticky;
-        top: 0;
-        height: 200px;
-        background-color: white;
-        padding: 0px 15px;
-        /* border: 1px solid red; */
-    }
-
-    #top {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        /* padding-top: 5px; */
-        padding-bottom: 5px;
-        /* margin-bottom: 20px; */
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    .add {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-    }
-
-    #top1 {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        /* padding-top: 5px; */
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    #logoleft {
-        width: 40px;
-        /* height: 100%; */
-        display: flex;
-        /* align-content: center; */
-        align-items: center;
-    }
-
-    #logoright {
-        width: 220px;
-        /* height: 100%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo1 {
-        display: none;
-    }
-
-    .logo4 {
-        width: 20px
-    }
-
-    .logo2 {
-        width: 25px
-    }
-
-    #logo3 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        color: gray;
-        margin-top: 20px;
-        font-size: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        padding: 0% 20%;
-    }
-
-    #sale {
-        width: 100%;
-        /* height: 50px; */
-        font-size: 20px;
-        font-weight: 600;
-        color: #e50010;
-        background-color: #f8f7f6;
-        margin-bottom: 30px;
-        padding-left: 10px;
-        padding-top: 50%;
-        padding-bottom: 50%;
-        font-weight: 700;
-        font-size: 40px;
-        font-family: "Aerator Regular", sans-serif;
-    }
-
-    .shopnow {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        padding: 0px 15px;
-    }
-
-    #terms {
-        padding: 0px 10px;
-        font-size: 14px;
-        color: grey;
-        margin-bottom: 15px;
-    }
-
-    #background {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #block {
-        display: none;
-    }
-
-    #bgimg {
-        display: none;
-    }
-
-    #bgimg1 {
-        width: 100%;
-        height: 70%;
-        background-image: url("./images/brown-hues-summer-decor-4x5-LP5.webp");
-        background-size: cover;
-        background-position: center;
-        /* position: relative; */
-        /* padding-top: 110%; */
-        /* border: 1px solid blue; */
-    }
-
-    #content {
-        height: 75%;
-        /* border: 5px solid red; */
-    }
-
-    #font {
-        /* height: 60%; */
         position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-weight: bolder;
-        /* font-stretch:extra-condensed; */
-        line-height: 1;
-        font-size: 50px;
-        color: white;
-        padding-top: 90%;
-        /* border: 1px solid blue; */
+        bottom: 0;
+        /* border: 10px solid orange; */
+
     }
-
-    #butn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: underline;
-        padding-top: 13px;
-    }
-
-    #bedimg {
-        width: 100%;
-        height: 100%;
-        padding-top: 20px;
-    }
-
-    #viewall {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        padding-top: 90%;
-        padding-inline: 15px;
-    }
-
-    #products {
-        width: 100%;
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .productsdiv {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* margin-bottom: 20px; */
-    }
-
-    #products div img {
-        width: 100%;
-    }
-
-    .bigimg {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        /* padding-top: 20px; */
-        /* margin-bottom: 60px; */
-    }
-
-    .bigimgdiv {
-        width: 50%;
-        /* margin-bottom: 20px; */
-    }
-
-    .bigimg div img {
-        width: 100%;
-    }
-
-    .bigimg1 {
-        width: 100%;
-        height: 45vh;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .bigimg1 div img {
-        width: 100%;
-    }
-
-
-
 
     #hm {
         display: flex;
@@ -277,11 +38,25 @@
         padding-left: 15px;
     }
 
-    .shop {
+    .moreinfo {
         display: flex;
         justify-content: space-between;
         margin-bottom: 25px;
         padding: 0px 15px;
+    }
+
+    .moreinfo button {
+        font-size: 16px;
+        font-family: "Almarai", sans-serif;
+        font-weight: 400;
+        margin-bottom: 15px;
+        border: none;
+        background-color: white;
+    }
+
+    .moreinfo button:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     #details {
@@ -308,6 +83,16 @@
         width: 60%;
     }
 
+    #change {
+        background-color: white;
+        border: none;
+        text-decoration: underline;
+    }
+
+    #change:hover {
+        font-weight: bold;
+    }
+
     #media {
         display: flex;
         justify-content: space-between;
@@ -320,7 +105,7 @@
         display: none;
     }
 
-    #footer {
+    #bottom {
         font-size: 12px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding-bottom: 40px;
@@ -330,121 +115,11 @@
 
 @media (min-width: 1200px) and (max-width: 1920px) {
 
-    #bodyhome {
+    #bodyFooter {
         width: 100%;
-        /* height: 100vh; */
-        /* padding: 15px; */
         font-family: "Almarai", sans-serif;
-        /* display: block;
-    justify-content: center;
-    align-items: center; */
-        /* border: 10px solid rgb(17, 0, 255); */
+        /* border: 10px solid red; */
 
-    }
-
-    .header {
-        position: sticky;
-        top: 0;
-        background-color: white;
-        padding: 0px 15px;
-        /* border: 5px solid red; */
-    }
-
-    #top {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        /* padding-top: 5px; */
-        padding-bottom: 5px;
-        /* margin-bottom: 20px; */
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    .add {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-    }
-
-    #top1 {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        justify-items: baseline;
-        font-family: "Almarai", sans-serif;
-        /* padding-top: 5px; */
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        /* border: 1px solid rgb(23, 21, 21); */
-
-    }
-
-    #logoleft {
-        width: 40px;
-        /* height: 100%; */
-        display: flex;
-        /* align-content: center; */
-        align-items: center;
-    }
-
-    #logoright {
-        width: 180px;
-        /* height: 100%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo1 {
-        /* width: 65%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        color: gray;
-        margin-top: 20px;
-        font-size: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        padding: 0% 20%;
-        /* border: 1px solid blue; */
-    }
-
-    .logo4 {
-        width: 20px
-    }
-
-    .logo2 {
-        display: none;
-    }
-
-    #logo3 {
-        display: none;
-    }
-
-    #sale {
-        width: 99%;
-        height: 75vh;
-        font-size: 20px;
-        font-weight: 600;
-        color: #e50010;
-        background-color: #f8f7f6;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        padding-top: 12%;
-        padding-bottom: 5%;
-        font-weight: 700;
-        font-size: 40px;
-        font-family: "Aerator Regular", sans-serif;
-        /* border: 5px solid #07534b; */
     }
 
     .shopnow {
@@ -461,149 +136,9 @@
         margin-bottom: 15px;
     }
 
-    #background {
-        width: 100%;
-        /* height: 100vh; */
-        /* border: 5px solid #e50010; */
-    }
-
     #block {
-        /* width: 100vw; */
-        /* height: 100%; */
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
-        /* padding-top: 20px; */
         /* border: 5px solid rgb(90, 248, 5);" */
-    }
-
-    #bgimg {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-image: url("./images/towel16x9.jpg");
-        background-size: cover;
-        zoom: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
-        /* flex-direction: column; */
-        /* position:relative; */
-        padding-top: 35%;
-        /* border: 5px solid rgb(255, 115, 0); */
-
-    }
-
-    #bgimg1 {
-        display: none;
-    }
-
-    #content {
-        display: none;
-    }
-
-    #font {
-        /* width: 100%;
-        height: 80%; */
-        /* position:relative; */
-        /* top: 50%; */
-        /* left: 35%; */
-        /* transform: translate(-50%, -50%); */
-        /* text-align: center; */
-        font-weight: bolder;
-        font-size: 50px;
-        color: white;
-        margin-left: 20px;
-        /* padding-left: 10px; */
-        padding-bottom: 10px;
-        /* border: 5px solid blue; */
-    }
-
-    #butn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: underline;
-        padding-top: 13px;
-    }
-
-    #bedimg {
-        width: 50%;
-        height: 100%;
-        /* padding-top: 20px; */
-        /* border: 5px solid blue; */
-    }
-
-
-    #viewall {
-        /* width: 50%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* justify-items: right; */
-        margin-bottom: 10%;
-        padding-top: 15px;
-        padding-inline: 15px;
-        padding-left: 52%;
-    }
-
-    #products {
-        width: 100%;
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .productsdiv {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* flex-grow: ; */
-        /* margin-bottom: 20px; */
-    }
-
-    #products div img {
-        width: 100%;
-    }
-
-    .bigimg {
-        width: 100%;
-        /* height: 100vh; */
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        /* padding-top: 20px; */
-        margin-bottom: 50px;
-    }
-
-    .bigimgdiv {
-        width: 50%;
-        height: 100%;
-        /* margin-bottom: 20px; */
-    }
-
-    .bigimg div img {
-        width: 100%;
-    }
-
-    .bigimg1 {
-        width: 100%;
-        /* height: 45vh; */
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .bigimg1 div img {
-        width: 100%;
     }
 
     #hm {
@@ -619,7 +154,7 @@
         padding-left: 15px;
     }
 
-    .shop {
+    .moreinfo {
         display: none;
         justify-content: space-between;
         margin-bottom: 25px;
@@ -633,12 +168,33 @@
     }
 
     .texts {
+        display: inline-block;
+        justify-content: left;
+        align-items: flex-start;
         width: 25%;
         font-size: 15px;
         font-family: "Almarai", sans-serif;
         font-weight: 400;
         line-height: 30px;
         padding-inline: 15px;
+        /* border: 1px solid green; */
+    }
+
+    .texts button {
+        display: block;
+        justify-content: space-between;
+        align-items: left;
+        font-size: 15px;
+        font-family: "Almarai", sans-serif;
+        font-weight: 400;
+        margin-bottom: 15px;
+        border: none;
+        background-color: white;
+    }
+
+    .texts button:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     #black {
@@ -662,11 +218,21 @@
         width: 20%;
     }
 
+    #change {
+        background-color: white;
+        border: none;
+        text-decoration: underline;
+    }
+
+    #change:hover {
+        font-weight: bold;
+    }
+
     #media {
         display: none;
     }
 
-    #footer {
+    #bottom {
         font-size: 12px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding-bottom: 40px;
