@@ -16,6 +16,8 @@ const Header = () => {
         router("/");
     }
 
+    const menuRef = useRef(null);
+    const [menuVisible, setMenuVisible] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const searchRef = useRef(null);
@@ -23,6 +25,9 @@ const Header = () => {
         function handleClickOutside(event) {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
                 setShowSearch(false);
+            }
+            if (!event.target.closest('#logo1') && !event.target.closest('.logo2')) {
+                setMenuVisible(false);
             }
         }
 
@@ -51,16 +56,25 @@ const Header = () => {
                         <button onClick={() => router("/kids")}>KIDS</button>
                         <button onClick={() => router("/home")}>HOME</button>
                     </div>
+                    {menuVisible && (
+                        <div ref={menuRef} className="mobile-fullscreen-menu">
+                            <button className="close-menu-btn" onClick={() => setMenuVisible(false)} aria-label="Close menu">&#10005;</button>
+                            <button onClick={() => { router("/ladies"); console.log("Navigating to /men") }}>LADIES</button>
+                            <button onClick={() => { router("/men")}}>MEN</button>
+                            <button onClick={() => { router("/kids")}}>KIDS</button>
+                            <button onClick={() => { router("/home")}}>HOME</button>
+                        </div>
+                    )}
                 </div>
                 <div id="logoright" ref={searchRef}>
                     <button className="logo4" onClick={() => setShowSearch((prev) => !prev)}><img src={searchIcon} alt="Search" /></button>
                     {showSearch && (
                         <input type="text" placeholder="Search..." value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)} className="search-input" />)}
-                    <button className="logo4"><img src={profile} alt="profile" /></button>
+                    <button className="logo4"><img src={profile} alt="profile" onClick={() => router("/")} /></button>
                     <button className="logo4"><img src={favorite} alt="favorite" /></button>
                     <button className="logo4"><img src={shoppingBag} alt="shoppingBag" onClick={() => router("/cart")} /></button>
-                    <button className="logo2"><img src={equal} alt="equal" /></button>
+                    <button className="logo2" onClick={() => setMenuVisible((prev) => !prev)}><img src={equal} alt="equal" /></button>
                 </div>
             </div>
         </div>

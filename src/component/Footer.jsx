@@ -8,15 +8,21 @@ import tiktok from '../images/tiktok.png';
 import facebook from '../images/facebook.png';
 import youtube from '../images/youtube.png';
 import add from "../assets/add_.svg";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+    const router = useNavigate();
+    function redirecttoLogin() {
+        router("/");
+    }
+
     return (
         <footer id="bodyFooter">
             <div>
                 {/* <div id="hmlink"><span style={{ color: "gray" }}>HM.COM / </span><b>SIGN IN</b></div> */}
                 <div className="moreinfo">
                     <button>SHOP</button>
-                    <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add"/></div>
+                    <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add" /></div>
                 </div>
                 <div className="moreinfo">
                     <button>CORPORATE INFO</button>
@@ -28,15 +34,15 @@ const Footer = () => {
                 </div>
                 <div id="details">
                     <div className="texts">
-                        <button style={{ marginBottom: "20px", fontWeight: "bold"}}>Shop</button><br />
-                        <button>LADIES</button>
-                        <button>MEN</button>
-                        <button>KIDS</button>
-                        <button>HOME</button>
+                        <button style={{ marginBottom: "20px", fontWeight: "bold" }}>Shop</button><br />
+                        <button onClick={() => router("/ladies")}>LADIES</button>
+                        <button onClick={() => router("/men")}>MEN</button>
+                        <button onClick={() => router("/kids")}>KIDS</button>
+                        <button onClick={() => router("/home")}>HOME</button>
                         <button>MAGAZINE</button>
                     </div>
                     <div className="texts">
-                        <button style={{ marginBottom: "25px", fontWeight: "bold"}}>Corporate Info</button>
+                        <button style={{ marginBottom: "25px", fontWeight: "bold" }}>Corporate Info</button>
                         <button>CAREER AT H&M</button>
                         <button>ABOUT H&M GROUP</button>
                         <button>SUSTAINABILITY H&M GROUP</button>
@@ -45,7 +51,7 @@ const Footer = () => {
                         <button>CORPORATE GOVERNANCE</button>
                     </div>
                     <div className="texts">
-                        <button style={{ marginBottom: "20px", fontWeight: "bold"}}>Help</button>
+                        <button style={{ marginBottom: "20px", fontWeight: "bold" }}>Help</button>
                         <button>CUSTOMER SERVICE</button>
                         <button>MY H&M</button>
                         <button>FIND A STORE</button>

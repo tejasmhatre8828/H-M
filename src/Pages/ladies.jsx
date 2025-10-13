@@ -4,7 +4,7 @@ import '../Styles/cart.css';
 import { useNavigate } from "react-router-dom";
 
 
-const Cart = () => {
+const Ladies = () => {
     const router = useNavigate();
     function redirecttoLogin() {
         router("/");
@@ -14,7 +14,7 @@ const Cart = () => {
         <div id="cart">
             <div id="msg">
                 <div id="message">
-                    <div id="bag">SHOPPING BAG</div>
+                    <div id="bag">Ladies</div>
                     <div id="alpha">
                         <div>
                             <span style={{ marginTop: "20px" }}>Sign in to save or access already saved items in your shopping bag</span>
@@ -24,10 +24,10 @@ const Cart = () => {
                     <button onClick={() => router("/")} id="sign">SIGN IN</button>
                 </div>
             </div>
-            <div id="hmlink"><span style={{ color: "gray" }}>HM.COM /</span> SHOPPING BAG</div>
+            <div id="hmlink"><span style={{ color: "gray" }}>HM.COM /</span> LADIES</div>
         </div>
 
     );
 };
 
-export default Cart;
+export default Ladies;

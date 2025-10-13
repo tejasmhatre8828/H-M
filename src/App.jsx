@@ -7,6 +7,8 @@ import Home from './Pages/homePage';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
+import Ladies from './Pages/ladies';
+import Kids from './Pages/kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './Pages/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
@@ -22,6 +24,8 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="home" element={<Home />} />
           <Route path="men" element={<Mens />} />
+          <Route path="ladies" element={<Ladies />} />
+          <Route path="kids" element={<Kids />} />
           <Route path="singleproduct" element={<SingleProduct />} />
           <Route path="ordersuccessfull" element={<OrderSuccessfull />} />
           <Route path="cart" element={<Cart />} />
