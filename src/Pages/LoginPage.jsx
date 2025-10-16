@@ -10,42 +10,16 @@ const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         if (!email || !password) {
             toast.error("Please fill in all fields.");
-            return;
-        }
-
-        try {
-            setLoading(true);
-
-            const response = await fetch("https://reqres.in/api/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email, password }),
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                toast.success("Login successful!");
-                localStorage.setItem("token", data.token);
-                setTimeout(() => navigate("/home"), 1500);
-            } else {
-                toast.error(data.error || "Login failed.");
-            }
-        } catch (err) {
-            toast.error("Something went wrong.");
-        } finally {
-            setLoading(false);
+        } else {
+            toast.success("Login successful!");
+            setTimeout(() => navigate("/home"), 1500);
         }
     };
 
@@ -67,8 +41,8 @@ const Login = () => {
                         <label>Password</label><br />
                         <input type="password" placeholder="Password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                     </div>
-                    {error && <p style={{ color: "red" }}>{error}</p>}
-                    <button id="continue" type="submit" disabled={loading}>{loading ? "Logging in..." : "CONTINUE"}</button>
+
+                    <button id="continue" type="submit" onClick={handleSubmit}>continue</button>
 
                     <div style={{ display: "flex", justifyContent: "center" }}>
                         <div><img src={lock} alt="lock" style={{ width: "25px", height: "18px" }} /></div>

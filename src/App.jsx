@@ -13,6 +13,7 @@ import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './Pages/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
 import Cart from './Pages/cart';
+import UploadProduct from './Pages/uploadProduct';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
           <Route path="singleproduct" element={<SingleProduct />} />
           <Route path="ordersuccessfull" element={<OrderSuccessfull />} />
           <Route path="cart" element={<Cart />} />
-
+          <Route path="uploadproduct" element={<UploadProduct />} />
         </Routes>
         <ToastContainer position="top-center" autoClose={3000} />
       </main>
