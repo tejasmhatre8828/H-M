@@ -3,7 +3,8 @@ import { useState } from 'react';
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Login from './Pages/LoginPage';
-// import HomePage from './Pages/HomePage';
+import Login from './Pages/LoginPage';
+import Home from './Pages/homepage';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
@@ -23,7 +24,7 @@ function App() {
       <main className='main-content'>
         <Routes>
           <Route path="/" element={<Login />} />
-          {/* <Route path="home" element={<HomePage />} /> */}
+          <Route path="home" element={<Home />} />
           <Route path="men" element={<Mens />} />
           <Route path="ladies" element={<Ladies />} />
           <Route path="kids" element={<Kids />} />
