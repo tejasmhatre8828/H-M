@@ -6,13 +6,13 @@ import Login from './Pages/LoginPage';
 import HomePage from './Pages/HomePage';
 import Header from './component/Header';
 import Footer from './component/Footer';
-import Mens from './Pages/mens';
-import Ladies from './Pages/ladies';
-import Kids from './Pages/kids';
+import Mens from './Pages/Mens';
+import Ladies from './Pages/Ladies';
+import Kids from './Pages/Kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './Pages/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
-import Cart from './Pages/cart';
+import Cart from './Pages/Cart';
 import UploadProduct from './Pages/uploadProduct';
 
 function App() {
