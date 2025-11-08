@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Login from './Pages/LoginPage';
-import Login from './Pages/LoginPage';
 import Home from './Pages/homepage';
 import Header from './component/Header';
 import Footer from './component/Footer';
