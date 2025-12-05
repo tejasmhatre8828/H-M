@@ -7,7 +7,7 @@ import Home from './Pages/home';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
-// import Ladies from './Pages/Ladies.jsx';
+import Ladies from './Pages/Ladies';
 import Kids from './Pages/Kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
@@ -78,7 +78,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/men" element={<Mens />} />
-          {/* <Route path="/ladies" element={<Ladies />} /> */}
+          <Route path="/ladies" element={<Ladies />} />
           <Route path="/kids" element={<Kids />} />
           <Route path="/singleproduct" element={<SingleProduct />} />
           <Route path="/ordersuccessfull" element={<OrderSuccessfull />} />
