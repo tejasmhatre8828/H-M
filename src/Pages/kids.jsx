@@ -24,7 +24,6 @@ const Kids = () => {
                     <button onClick={() => router("/")} id="sign">SIGN IN</button>
                 </div>
             </div>
-            <div id="hmlink"><span style={{ color: "gray" }}>HM.COM /</span> KIDS</div>
         </div>
 
     );

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&family=Aerator+Regular&family=Michroma&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #bodypayment {
+        width: 100%;
+        height: 100%;
+        padding-inline: 10px;
+        font-family: "Michroma", sans-serif;
+        /* background-color: rgb(231, 231, 251); */
+        /* border: 1px solid rgb(17, 0, 255); */
+
+    }
+
+    .paymentmode {
+        /* width: 100%; */
+        /* height: 100%; */
+        display: block;
+        justify-content: center;
+        margin-bottom: 10px;
+        line-height: 3;
+        /* background-color: rgb(255, 255, 255); */
+        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+        /* border-radius: 20px; */
+        /* border: 2px solid blue; */
+    }
+
+    .paymentmode img {
+        margin-inline: 35%;
+    }
+
+    .paymentmode p {
+        line-height: 2;
+    }
+
+    .cod {
+        font-size: 10px;
+        background-color: rgb(118, 116, 116);
+        color: white;
+        border: none;
+        padding: 8px;
+        margin-right: 10px;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .payment {
+        border: none;
+        font-size: 10px;
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-family: "Michroma", sans-serif;
+
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #bodypayment {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* height: 100wh; */
+        padding: 15px;
+        background-color: rgb(231, 231, 251);
+        font-family: "Michroma", sans-serif;
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .paymentmode {
+        /* width: 100%; */
+        /* height: 100%; */
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        /* background-color: rgb(252, 245, 237); */
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        /* border: 2px solid rgb(199, 199, 251); */
+    }
+
+    .paymentmode img {
+        margin-inline: 40%;
+    }
+
+    .paymentmode p {
+        line-height: 3;
+    }
+
+
+    .cod {
+        font-size: 10px;
+        background-color: rgb(118, 116, 116);
+        color: white;
+        border: none;
+        padding: 8px;
+        margin-right: 10px;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .payment {
+        border: none;
+        font-size: 10px;
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-family: "Michroma", sans-serif;
+
+    }
+
+
+
+}

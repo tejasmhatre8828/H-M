@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&family=Aerator+Regular&family=Michroma&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #bodycart {
+        /* width: 100%; */
+        height: 100%;
+        padding-inline: 10px;
+        font-family: "Michroma", sans-serif;
+        /* border: 1px solid rgb(17, 0, 255); */
+
+    }
+
+    .cart-products {
+        width: 100%;
+        /* height: 100%; */
+        display: block;
+        /* justify-content: center; */
+        margin-bottom: 10px;
+        /* border: 2px solid blue; */
+    }
+
+
+    .cartsingleproduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        background-color: #faedfe;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .cart-imgdiv {
+        width: 100%;
+        /* height: 100px; */
+        padding-inline: 100px;
+        padding-top: 10px;
+        /* border: 2px solid blue; */
+        margin-bottom: 10px;
+        margin-right: 100px;
+        border-radius: 10px;
+        /* overflow: hidden; */
+    }
+
+    .cartsingleimg {
+        width: 100%;
+        /* padding: 100px; */
+        height: 150px;
+        /* margin-bottom: 10px; */
+        border-radius: 10px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        /* border: 2px solid blue !important; */
+
+    }
+
+    .cart-details {
+        display: block;
+        /* height: 500px; */
+        width: 100%;
+        padding: 10px;
+        /* padding-top: 50px; */
+        background-color: #faedfe;
+        /* border: 1px solid green; */
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #bodycart {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        font-family: "Michroma", sans-serif;
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .cart-products {
+        width: 100%;
+        /* height: 100%; */
+        display: block;
+        justify-content: center;
+        margin-bottom: 10px;
+        /* border: 2px solid blue; */
+    }
+
+
+    .cartsingleproduct {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 10px;
+        width: 50vw;
+        /* height: 400px; */
+        background-color: #faedfe;
+        font-size: 12px;
+        /* border: 2px solid blue !important; */
+        /* position: relative;
+        z-index: 100; */
+        cursor: pointer;
+    }
+
+    .cart-imgdiv {
+        width: 10%;
+        /* height: 70%; */
+        /* padding: 10px; */
+        /* border: 2px solid blue; */
+        border-radius: 10px;
+        /* overflow: hidden; */
+    }
+
+    .cartsingleimg {
+        /* width: 250px; */
+        height: 250px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        /* border: 2px solid blue !important; */
+
+    }
+
+    .cart-details {
+        display: block;
+        /* height: 500px; */
+        /* width: 350px; */
+        /* width: 58%; */
+        padding: 20px;
+        padding-top: 50px;
+        background-color: #faedfe;
+        /* border: 1px solid green; */
+    }
+
+    .singleproductdiv button {
+        pointer-events: auto;
+    }
+
+    .order-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .order-box {
+        background: #fff;
+        padding: 30px;
+        width: 350px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .order-box input {
+        font-family: "Michroma", sans-serif;
+    }
+
+    .order-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .order-buttons button {
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .cancel {
+        font-size: 10px;
+        background-color: rgb(118, 116, 116);
+        color: white;
+        border: none;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .payment {
+        font-size: 10px;
+        background-color: black;
+        color: white;
+        font-family: "Michroma", sans-serif;
+
+    }
+
+
+
+}

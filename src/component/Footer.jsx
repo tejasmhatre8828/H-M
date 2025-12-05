@@ -8,9 +8,22 @@ import tiktok from '../images/tiktok.png';
 import facebook from '../images/facebook.png';
 import youtube from '../images/youtube.png';
 import add from "../assets/add_.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
+
+const pageNames = {
+    "/": "HOMEPAGE",
+    "/login": "LOGIN",
+    "/profile": "PROFILE",
+    "/ladies": "LADIES",
+    "/men": "MENS",
+    "/kids": "KIDS",
+    "/home": "HOME",
+};
 
 const Footer = () => {
+    const location = useLocation();
+    const currentPage = pageNames[location.pathname] || "PAGE";
     const router = useNavigate();
     function redirecttoLogin() {
         router("/");
@@ -19,7 +32,8 @@ const Footer = () => {
     return (
         <footer id="bodyFooter">
             <div>
-                {/* <div id="hmlink"><span style={{ color: "gray" }}>HM.COM / </span><b>SIGN IN</b></div> */}
+                <div id="hmlink"><span style={{ color: "gray" }}>HM.COM / </span>{currentPage}</div>
+
                 <div className="moreinfo">
                     <button>SHOP</button>
                     <div><img style={{ width: "30px", height: "25px" }} src={add} alt="add" /></div>
@@ -100,5 +114,6 @@ const Footer = () => {
         </footer>
     );
 };
+
 
 export default Footer;

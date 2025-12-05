@@ -1,7 +1,7 @@
-import React from "react";
-import '../Styles/Home.css';
-import add from "../assets/add_.svg";
-import bed4x5 from "../images/bg bed 4x5.jpg";
+import React, { useEffect, useState } from "react";
+import '../Styles/HomePage.css';
+import { useNavigate, useParams } from "react-router-dom";
+
 import img1 from "../images/img1.jpg";
 import img2 from "../images/img2.jpg";
 import img3 from "../images/img3.jpg";
@@ -14,65 +14,56 @@ import img9 from "../images/img9.jpg";
 import img10 from "../images/img10.jpg";
 import img11 from "../images/img11.jpg";
 import img12 from "../images/img12.jpg";
-import beddingCE from "../images/Bedding_CE.jpg";
-import tablewareCE from "../images/Tableware_CE.jpg";
-import towels from "../images/Towels_CE_wk23-28-2x3_5.jpg";
-import decorationsCE from "../images/Decorations_CE_wk23-28-2x3_4.jpg";
-import natural from "../images/natural notes 16x9.jpg";
-import brown from "../images/brown-hues-summer-decor-4x5-LP5.jpg"
+
+const HomePage = () => {
+    const router = useNavigate();
+    const { category: routeCategory } = useParams();
+
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(false);
 
 
-const Home = () => {
 
     return (
         <div id="home">
-            <div id="sale">
-                <div>SALE</div>
+            <div className="wintersale" onClick={() => router("/all-products")}>
+                <div>WINTER SALE</div>
                 <div style={{ paddingBottom: "30px" }}>UPTO 50% OFF</div>
                 <div>NEW STYLES</div>
                 <div>ADDED</div>
             </div>
-            <div className="shopnow">
-                <div className="add">EXPLORE THE LATEST CURATION</div>
-                <div className="add">SHOP NOW <img style={{ width: "30px", height: "25px" }} src={add} alt="add" /></div>
+            <div className="newin">
+                <div className="add">NEW IN</div>
+                <div className="add"><button>VIEW ALL</button></div>
             </div>
-            <div id="terms">Offer valid on selected styles. Available online & in-stores.*T&C Apply</div>
+            <div className="saleimg" onClick={() => router("/ladies")}>
+                <img src="https://image.hm.com/content/dam/global_campaigns/the_studio_all/june-2025/horizontal-/edit/2052-4x5-4-edit-Horizontal-wk26.jpg?imwidth=4800" />
+            </div>
+            <div className="newin">
+                <div className="add">LADIES FASHION</div>
+                <div className="add"><button>VIEW ALL</button></div>
+            </div>
+            <div className="saleimgmens" onClick={() => router("/mens")}>
+                <img src="https://www2.hm.com/content/dam/global_campaigns/season_02/men/start-page-assets/w48-w49-tuesday/cat-entries/Jeans-CE-wk48-52.jpg" />
+                <img src="https://image.hm.com/content/dam/global_campaigns/season_02/men/start-page-assets/w48-w49-tuesday/new-croppings-w48/MS13LH1-startpage-teaser-w48-NEW-2x3.jpg?imwidth=4800" />
+            </div>
+            <div className="newin">
+                <div className="add">MENS STYLE</div>
+                <div className="add"><button>VIEW ALL</button></div>
+            </div>
             <div id="background">
-                <div id="block">
-                    <div id="bgimg">
-                        <img src={natural} alt="natural" />
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", marginTop: "80%" }}>
-                            <div id="font">NATURAL NOTES</div>
-                            <div><button>SHOP NOW</button></div>
-                        </div>
-                    </div>
-                    <div id="bedimg"><img style={{ width: "100%", height: "100%" }} src={bed4x5} alt="bed4x5" /></div>
-
-                </div>
-                <div id="bgimg1" >
-                    <div id="content">
-                        <img src={brown} alt="brown" />
-                        <div style={{ display: "block", justifyContent: "center", alignItems: "center", width: "100%", lineHeight: "3.0" }}>
-                            <div id="font1">
-                                <div>NATURAL</div>
-                                <div>NOTES</div>
-                            </div>
-                            <div><button>SHOP NOW</button></div>
-                        </div>
-                    </div>
-                    <div id="bedimg1"><img src={bed4x5} alt="bed4x5" /></div>
-
-                </div>
-
-                <div id="viewall">
-                    <div className="add">SUMMER BEDDING</div>
-                    <div className="add"><u>SHOP NOW</u></div>
-                </div>
-                <div className="shopnow">
+                {/* <div className="newin">
                     <div className="add">NEW IN</div>
-                    <div className="add"><u>VIEW ALL</u></div>
-                </div>
-                <div id="products">
+                    <div className="add"><button>VIEW ALL</button></div>
+                </div> */}
+
+
+
+
+
+
+
+                <div id="products" onClick={() => router("/home")}>
                     <div className="productsdiv">
                         <div><img src={img1} alt="img1" /></div>
                         <div><img src={img2} alt="img2" /></div>
@@ -92,7 +83,7 @@ const Home = () => {
                         <div><img src={img12} alt="img12" /></div>
                     </div>
                 </div>
-                <div className="bigimg">
+                {/* <div className="bigimg">
                     <div className="bigimgdiv"><img src={beddingCE} alt="beddingCE" />
                         <h4 style={{ padding: "10px 0px 10px 15px", fontWeight: "normal" }}>BEDDING</h4><span
                             style={{ paddingLeft: "15px", fontWeight: "500", fontSize: "14px" }}>EXPLORE</span>
@@ -111,28 +102,13 @@ const Home = () => {
                         <h4 style={{ padding: "10px 0px 10px 15px", fontWeight: "normal" }}>DECORATIONS</h4><span
                             style={{ paddingLeft: "15px", fontWeight: "500", fontSize: "14px" }}>EXPLORE</span>
                     </div>
-                </div>
-                <div className="shop">HOME DECOR</div>
-                <div>
-                    <p style={{ fontSize: "15px", paddingInline: "15px", fontWeight: "500", lineHeight: "1.5" }}>Level up your
-                        interior aesthetics with our home décor range. Whether you've moved into a new home,
-                        or you want to breathe new life into your existing living space, our collection has every room in
-                        the house covered. Our furniture edit offers stunning side tables and comfy lounge chairs, plus
-                        there’s an array of chic lighting to create a calming ambience. Looking for those finishing touches?
-                        Check out our beautiful <u>bed linen</u>, and top it off by scrolling for decorative <u>cushions and
-                            cushion
-                            covers, or create textured layers with blankets and throws. When it comes to decorations</u>,
-                        add
-                        scented candles to your bathroom, give your favorite plants a place to call home in our chic plant
-                        pots, or experiment with wall hangings and elegant glassware. Whether your preferred style is
-                        minimalistic or bold, we've got something to suit every taste in our home décor range.
-                    </p>
-                </div>
-                <div id="hmlink"><span style={{ color: "gray" }}>HM.COM / </span><b>HOME</b></div>
+                </div> */}
             </div>
         </div>
 
     );
 };
 
-export default Home;
+export default HomePage;
+
+

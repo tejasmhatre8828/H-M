@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&family=Aerator+Regular&family=Michroma&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #bodysingle {
+        width: 100%;
+        height: 100%;
+        padding-inline: 15px;
+        font-family: "Michroma", sans-serif;
+        /* border: 1px solid rgb(17, 0, 255); */
+
+    }
+
+    .singleproductseller {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #ccc; */
+        border-radius: 10px;
+        padding: 10px;
+        /* width: 350px; */
+        background-color: #faedfe;
+        font-size: 12px;
+    }
+
+    .singleproductseller:hover {
+        background-color: #eab5fa;
+    }
+
+    .single-imgdiv img {
+        width: 150px;
+        height: 200px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .singleproductseller>div {
+        pointer-events: none;
+    }
+
+    .singleproductseller button {
+        pointer-events: auto;
+    }
+
+    .editdelete {
+        background-color: black;
+        color: white;
+        width: 100px;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-inline: 20px;
+        margin-top: 10px;
+        border: 2px solid yellow;
+    }
+
+    .editdelete:hover {
+        background-color: darkred;
+        transform: scale(1.05);
+    }
+
+
+    #filter {
+        position: sticky;
+        top: 104px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    .size.active {
+        border: 2px solid black;
+    }
+
+    #filter button {
+        background-color: white;
+        border: none;
+    }
+
+    #filter button:hover {
+        font-weight: bold;
+    }
+
+
+    /* ---------- Modal ---------- */
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .bg-black {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-white {
+        background-color: white;
+    }
+
+    .rounded-xl {
+        border-radius: 12px;
+    }
+
+    .p-6 {
+        padding: 24px;
+    }
+
+    .w-96 {
+        width: 24rem;
+        /* 384px */
+    }
+
+    .shadow-lg {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* ---------- Modal Inputs ---------- */
+    .input {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: all 0.2s;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .input:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+    #bodysingle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-family: "Michroma", sans-serif;
+        /* border: 10px solid rgb(17, 0, 255); */
+
+    }
+
+    .singleproductseller {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid #ccc; */
+        border-radius: 10px;
+        padding: 10px;
+        width: 70%;
+        font-size: 12px;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+        border: 2px solid rgb(234, 234, 252) !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .single-imgdiv {
+        height: 500px;
+        width: 370px;
+        /* border: 1px solid green; */
+    }
+
+
+    .single-imgdiv img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        /* border: 1px solid rgb(128, 117, 0); */
+
+    }
+
+    .single-detailsdiv {
+        display: block;
+        height: 500px;
+        /* width: 350px; */
+        width: 58%;
+        padding: 20px;
+        padding-top: 50px;
+        background-color: #faedfe;
+        /* border: 1px solid green; */
+    }
+
+    .single-detailsdiv:hover {
+        background-color: #eab5fa;
+    }
+
+    .single-product>div {
+        pointer-events: none;
+    }
+
+    .single-product button {
+        pointer-events: auto;
+        margin-top: 80px;
+    }
+
+    .editdelete {
+        background-color: black;
+        color: white;
+        width: 100px;
+        /* border: none; */
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-inline: 20px;
+        margin-top: 10px;
+        border: 2px solid yellow;
+        /* z-index: 99999; */
+        /* position: relative; */
+    }
+
+    /* .editdelete:hover {
+        cursor: pointer;
+        background-color: rgb(241, 97, 97);
+    } */
+
+
+    #background {
+        width: 100%;
+        height: 100%;
+    }
+
+    #filter {
+        position: sticky;
+        top: 104px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    #filter button {
+        background-color: white;
+        border: none;
+    }
+
+    #filter button:hover {
+        font-weight: bold;
+    }
+
+
+    /* ---------- Modal ---------- */
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .bg-black {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-white {
+        background-color: white;
+    }
+
+    .rounded-xl {
+        border-radius: 12px;
+    }
+
+    .p-6 {
+        padding: 24px;
+    }
+
+    .w-96 {
+        width: 24rem;
+        /* 384px */
+    }
+
+    .shadow-lg {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* ---------- Modal Inputs ---------- */
+    .input {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: all 0.2s;
+        font-family: "Michroma", sans-serif;
+    }
+
+    .input:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+    .savecancel {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 999;
+    }
+
+}

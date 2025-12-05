@@ -42,6 +42,37 @@
         padding: 10px;
     }
 
+    .sizes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        /* border: 1px solid red; */
+    }
+
+    .color-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .color-option {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .color-circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+    }
+
     .upload-form button {
         width: 100%;
         padding: 14px;
@@ -112,6 +143,38 @@
         height: 80px;
         resize: vertical;
     }
+
+    .sizes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        /* border: 1px solid red; */
+    }
+
+    .color-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .color-option {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .color-circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+    }
+
 
     .upload-form button {
         width: 100%;

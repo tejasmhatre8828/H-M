@@ -24,7 +24,6 @@ const Cart = () => {
                     <button onClick={() => router("/")} id="sign">SIGN IN</button>
                 </div>
             </div>
-            <div id="hmlink"><span style={{ color: "gray" }}>HM.COM /</span> SHOPPING BAG</div>
         </div>
 
     );

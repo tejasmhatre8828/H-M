@@ -49,9 +49,9 @@ button {
     #bag {
         text-align: center;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 30px;
         font-family: "Michroma", sans-serif;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     #alpha {
@@ -112,7 +112,7 @@ button {
         /* border: 5px solid red; */
     }
 
-    #message {
+    #messages {
         width: 400px;
         height: 70%;
         display: block;
@@ -120,12 +120,17 @@ button {
         align-items: center;
         text-align: center;
         margin-top: 20px;
-        /* border: 3px solid green; */
+        border: 13px solid green;
     }
 
     #bag {
-        text-align: center;
-        font-weight: bolder;
+        text-shadow:
+            1px 0 black,
+            -1px 0 black,
+            0 1px black,
+            0 -1px black;
+        /* text-align: center; */
+        font-weight: 900;
         font-size: 35px;
         font-family: "Michroma", sans-serif;
         /* margin-bottom: 100px; */
