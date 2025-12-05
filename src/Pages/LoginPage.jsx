@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login } from "../Redux/Store";
 
 
-const Login = () => {
+const LoginPage = () => {
     const router = useNavigate();
     const [activeTab, setActiveTab] = useState("login");
     const [showPassword, setShowPassword] = useState(false);
@@ -137,4 +137,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginPage;
