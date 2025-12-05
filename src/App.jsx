@@ -7,8 +7,7 @@ import Home from './Pages/home';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
-
-import Kids from './Pages/Kids';
+import Kids from './Pages/kidsPage';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
