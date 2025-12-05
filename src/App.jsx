@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import Login from './Pages/logInPage';
 import Home from './Pages/homeDecor';
 import Header from './component/Navbar';
 import Footer from './component/footerAll';
@@ -34,6 +33,7 @@ import ViewSellers from './component/admin/viewSellers';
 import ViewProducts from './component/admin/viewProducts';
 import ViewAllOrders from './component/admin/viewOrders';
 import Ladies from './Pages/ladiesPage';
+import LoginPage from './Pages/loginpage';
 
 function App() {
 
@@ -74,7 +74,7 @@ function App() {
       <main className='main-content'>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/men" element={<Mens />} />
