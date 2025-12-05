@@ -11,7 +11,7 @@ import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
 import UploadProduct from './Pages/uploadProduct';
-import Register from './Pages/registerPage';
+import Register from './Pages/registerpage';
 import { useDispatch, useSelector } from 'react-redux';
 import HomePage from './Pages/homePage';
 import Profile from './Pages/myProfile';
