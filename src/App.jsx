@@ -7,15 +7,13 @@ import Home from './Pages/home';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
-import Ladies from './Pages/Ladies';
+// import Ladies from './Pages/Ladies';
 import Kids from './Pages/Kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
 import { ToastContainer } from 'react-toastify';
-import Cart from './Pages/Cart';
 import UploadProduct from './Pages/uploadProduct';
 import Register from './Pages/RegisterPage';
-import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import HomePage from './Pages/homepage';
 import Profile from './Pages/Profile';
@@ -36,6 +34,7 @@ import ViewUsers from './component/admin/viewUsers';
 import ViewSellers from './component/admin/viewSellers';
 import ViewProducts from './component/admin/viewProducts';
 import ViewAllOrders from './component/admin/viewOrders';
+import Ladies from './Pages/Ladies';
 
 function App() {
 
