@@ -7,7 +7,7 @@ import Home from './Pages/home';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
-import Ladies from './Pages/Ladies';
+import Ladies from './Pages/ladies.jsx';
 import Kids from './Pages/Kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
