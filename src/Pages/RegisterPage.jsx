@@ -10,7 +10,7 @@ import { login } from "../Redux/Store";
 import api from "../services/axios.config";
 
 
-const RegisterPage = () => {
+const Register = () => {
     const router = useNavigate();
     const user = useSelector((state) => state.counter.user);
     const [activeTab, setActiveTab] = useState("register");
@@ -145,4 +145,4 @@ const RegisterPage = () => {
     );
 };
 
-export default RegisterPage;
+export default Register;
