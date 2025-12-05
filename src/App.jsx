@@ -7,7 +7,7 @@ import Home from './Pages/home';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Mens from './Pages/mens';
-// import Ladies from './Pages/Ladies';
+import Ladies from './Pages/Ladies.jsx';
 import Kids from './Pages/Kids';
 import SingleProduct from './Pages/singleProduct';
 import OrderSuccessfull from './component/user/ordersuccessful';
@@ -34,7 +34,6 @@ import ViewUsers from './component/admin/viewUsers';
 import ViewSellers from './component/admin/viewSellers';
 import ViewProducts from './component/admin/viewProducts';
 import ViewAllOrders from './component/admin/viewOrders';
-import Ladies from './Pages/Ladies';
 
 function App() {
 
